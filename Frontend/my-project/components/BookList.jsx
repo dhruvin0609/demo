@@ -4,7 +4,7 @@ const BookList = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8082/api/books/')
+        fetch('https://demo-1jjr.onrender.com/api/books/')
             .then(response => response.json())
             .then(data => setBooks(data))
             .catch(error => console.error('Error fetching data:', error));
